@@ -18,7 +18,7 @@ endif
 " Pathogen install 
 execute pathogen#infect()
 " First, set no transparency:
-"set solarized_termtrans = 0
+let g:solarized_termtrans = 0
 
 
 " Use Vim settings, rather than Vi settings (much better!).

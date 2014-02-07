@@ -1,0 +1,3 @@
+[submodule "vim/.vim/bundle/todo"]
+	path = vim/.vim/bundle/todo
+	url = http://github.com/neochrome/todo.vim.git
