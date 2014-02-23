@@ -338,3 +338,5 @@ URxvt*intensityStyles: false
 *color14:                 S_base1
 *color15:                 S_base3
 
+
+disallowedWindowOps: 20,21,SetXprop

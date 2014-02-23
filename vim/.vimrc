@@ -25,6 +25,8 @@ let g:solarized_termtrans = 0
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+
+
 " set up tabs:
 set expandtab
 set shiftwidth=2
@@ -32,7 +34,8 @@ set softtabstop=2
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-set backupdir=/tmp
+set backupdir=./.backup,/tmp
+set directory=./.backup,/tmp
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
