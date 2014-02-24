@@ -107,12 +107,10 @@ chatnets = {
   fn = {
     type = "IRC";
     nick = "the_scourge";
-    autosendcmd = "/msg nickserv IDENTIFY etherline";
   };
   perlorg = {
     type = "IRC";
     nick = "a_scourge";
-    autosendcmd = "/msg nickserv IDENTIFY etherline";
   };
 };
 
