@@ -1,5 +1,5 @@
 xrdb ~/.Xresources
-t
 eval $(gpg-agent --enable-ssh-support --daemon)
 xmodmap ~/.speedswapper
-exec i3
+setxkbmap -model acer_laptop -layout gb
+exec startkde
