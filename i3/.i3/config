@@ -164,6 +164,10 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+# Screenshots
+bindsym Print exec ~/bin/screen.sh root
+bindsym $mod+Print exec ~/bin/screen.sh active
+
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
