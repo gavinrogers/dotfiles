@@ -32,6 +32,14 @@ servers = (
     autoconnect = "yes";
   },
   {
+    address = "irc.nap";
+    chatnet = "nap";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  },
+  {
     address = "irc.perl.org";
     chatnet = "perlorg";
     port = "6667";
@@ -46,7 +54,7 @@ servers = (
     use_ssl = "yes";
     ssl_verify = "no";
     autoconnect = "yes";
-  }
+  },
   {
     address = "irc.debian.org";
     chatnet = "OFTC";
@@ -66,7 +74,12 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
-  psyc = { type = "IRC"; };
+  psyc = { 
+    type = "IRC";
+    max_kicks = "1";
+    max_msgs = "3";
+    max_whois = "30";
+  };
   EFNet = { 
     type = "IRC";
     max_kicks = "4";
@@ -86,12 +99,6 @@ chatnets = {
     max_whois = "30";
   };
   QuakeNet = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  psyc = { 
     type = "IRC";
     max_kicks = "1";
     max_msgs = "3";
@@ -130,6 +137,7 @@ chatnets = {
   SILC = { type = "SILC"; };
   fn = { type = "IRC"; nick = "the_scourge"; };
   perlorg = { type = "IRC"; nick = "a_scourge"; };
+  nap = { type = "IRC"; nick = "gavin"; };
 };
 
 channels = (
@@ -139,7 +147,11 @@ channels = (
   { name = "#opentransactions"; chatnet = "fn"; autojoin = "yes"; },
   { name = "#opensourceecology"; chatnet = "fn"; autojoin = "yes"; },
   { name = "#puppet"; chatnet = "fn"; autojoin = "yes"; },
-  { name = "#youbroketheinternet"; chatnet = "psyc"; autojoin = "yes"; },
+  { 
+    name = "#youbroketheinternet";
+    chatnet = "psyc";
+    autojoin = "yes";
+  },
   { name = "#ethereum"; chatnet = "fn"; autojoin = "yes"; }
 );
 
