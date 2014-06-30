@@ -9,7 +9,7 @@
 	url = git@github.com:tpope/vim-git.git
 [submodule "vim/.vim/bundle/vim-colors-solarized"]
 	path = vim/.vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
+	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule "vim/.vim/bundle/vim-puppet"]
 	path = vim/.vim/bundle/vim-puppet
 	url = git@github.com:rodjek/vim-puppet.git
