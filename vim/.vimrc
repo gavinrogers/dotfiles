@@ -118,3 +118,5 @@ vmap <Enter> <Plug>(EasyAlign)
 
 " Start interactive EasyAlign with a Vim movement
 nmap <Leader>a <Plug>(EasyAlign)
+
+set diffopt=vertical
