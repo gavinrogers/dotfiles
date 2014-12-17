@@ -8,6 +8,9 @@
 "	      for Amiga:  s:.vimrc
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimr
+"
+" Make vim use the system clipboard.
+"set clipboard=unamed
 
 " When started as "evim", evim.vim will already have done these settings.
 "
