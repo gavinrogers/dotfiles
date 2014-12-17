@@ -28,3 +28,6 @@
 [submodule "vim/.vim/bundle/nerdtree"]
 	path = vim/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/.vim/bundle/gundo.vim"]
+	path = vim/.vim/bundle/gundo.vim
+	url = git@github.com:sjl/gundo.vim.git
