@@ -7,6 +7,14 @@ servers = (
     chatnet = "Undernet";
     port = "6667";
   },
+  {
+    address = "irc.anonops.com";
+    chatnet = "AnonOps";
+    port = "6697";
+    use_ssl = "yes";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  }
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
   { 
     address = "irc.quakenet.org";
@@ -74,6 +82,11 @@ chatnets = {
     max_whois = "4";
     max_query_chans = "5";
   };
+  AnonOps = {
+    type = "IRC";
+    nick = "scourge";
+    autosendcmd = "/msg nickserv identify mutualist; wait 2000";
+  }
   psyc = { 
     type = "IRC";
     max_kicks = "1";
@@ -152,7 +165,9 @@ channels = (
     chatnet = "psyc";
     autojoin = "yes";
   },
-  { name = "#ethereum"; chatnet = "fn"; autojoin = "yes"; }
+  { name = "#ethereum-dev"; chatnet = "fn"; autojoin = "yes"; },
+  { name = "#ethereum"; chatnet = "fn"; autojoin = "yes"; },
+  { name = "#anonops"; chatnet = "AnonOps"; autojoin = "yes"; },
 );
 
 aliases = {
