@@ -40,14 +40,6 @@ servers = (
     autoconnect = "yes";
   },
   {
-    address = "irc.nap";
-    chatnet = "nap";
-    port = "6667";
-    use_ssl = "no";
-    ssl_verify = "no";
-    autoconnect = "yes";
-  },
-  {
     address = "irc.perl.org";
     chatnet = "perlorg";
     port = "6667";
@@ -150,16 +142,17 @@ chatnets = {
   SILC = { type = "SILC"; };
   fn = { type = "IRC"; nick = "the_scourge"; };
   perlorg = { type = "IRC"; nick = "a_scourge"; };
-  nap = { type = "IRC"; nick = "gavin"; };
 };
 
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
-  { name = "silc"; chatnet = "silc"; autojoin = "No"; },
   { name = "#archlinux"; chatnet = "fn"; autojoin = "yes"; },
   { name = "#opentransactions"; chatnet = "fn"; autojoin = "yes"; },
-  { name = "#opensourceecology"; chatnet = "fn"; autojoin = "yes"; },
   { name = "#puppet"; chatnet = "fn"; autojoin = "yes"; },
+  { name = "#fedwiki"; chatnet = "fn"; autojoin = "yes"; },
+  { name = "#austrians"; chatnet = "fn"; autojoin = "yes"; },
+  { name = "#mises"; chatnet = "fn"; autojoin = "yes"; },
+  { name = "#econometrics"; chatnet = "fn"; autojoin = "yes"; },
   { 
     name = "#youbroketheinternet";
     chatnet = "psyc";
