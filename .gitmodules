@@ -37,9 +37,6 @@
 [submodule "vim/.vim/bundle/supertab"]
 	path = vim/.vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "vim/.vim/pyflakes-pathogen"]
-	path = vim/.vim/pyflakes-pathogen
-	url = https://github.com/mitechie/pyflakes-pathogen.git
 [submodule "vim/.vim/bundle/snipmate.vim"]
 	path = vim/.vim/bundle/snipmate.vim
 	url = https://github.com/msanders/snipmate.vim.git

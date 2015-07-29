@@ -14,6 +14,17 @@
 
 " When started as "evim", evim.vim will already have done these settings.
 "
+" Folding
+set foldmethod=indent
+set foldlevel=99
+
+"
+" Moving around in windows
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
 if v:progname =~? "evim"
   finish
 endif
@@ -22,6 +33,10 @@ endif
 execute pathogen#infect()
 " First, set no transparency:
 let g:solarized_termtrans = 0
+
+
+" Tasklist plugin
+map <leader>td <Plug>TaskList
 
 
 " Use Vim settings, rather than Vi settings (much better!).
@@ -72,6 +87,8 @@ if &t_Co > 2 || has("gui_running")
   set background=dark
   colorscheme solarized
 endif
+
+filetype on
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
