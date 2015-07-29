@@ -145,21 +145,17 @@ chatnets = {
 };
 
 channels = (
-  { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
-  { name = "#archlinux"; chatnet = "fn"; autojoin = "yes"; },
   { name = "#opentransactions"; chatnet = "fn"; autojoin = "yes"; },
   { name = "#puppet"; chatnet = "fn"; autojoin = "yes"; },
   { name = "#fedwiki"; chatnet = "fn"; autojoin = "yes"; },
-  { name = "#austrians"; chatnet = "fn"; autojoin = "yes"; },
-  { name = "#mises"; chatnet = "fn"; autojoin = "yes"; },
+  { name = "##austrians"; chatnet = "fn"; autojoin = "yes"; },
   { name = "#econometrics"; chatnet = "fn"; autojoin = "yes"; },
+  { name = "#nixos"; chatnet = "fn"; autojoin = "yes"; },
   { 
     name = "#youbroketheinternet";
     chatnet = "psyc";
     autojoin = "yes";
   },
-  { name = "#ethereum-dev"; chatnet = "fn"; autojoin = "yes"; },
-  { name = "#ethereum"; chatnet = "fn"; autojoin = "yes"; },
   { name = "#anonops"; chatnet = "AnonOps"; autojoin = "yes"; },
 );
 
