@@ -12,25 +12,36 @@
 " Make vim use the system clipboard.
 "set clipboard=unamed
 
-" When started as "evim", evim.vim will already have done these settings.
+
+" set the runtime path to include Vundle and initialize
+call plug#begin()
+" alternatively, pass a path where Vundle should install plugins
+" call vundle#begin('~/some/path/here')
 "
-" Folding
-set foldmethod=indent
-set foldlevel=99
-
+" " let Vundle manage Vundle, required
+Plug 'VundleVim/Vundle.vim'
 "
-" Moving around in windows
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
-
-if v:progname =~? "evim"
-  finish
-endif
-
-" Pathogen install 
-execute pathogen#infect()
+" " The following are examples of different formats supported.
+" " Keep Plugin commands between vundle#begin/end.
+" " plugin on GitHub repo
+Plug 'tpope/vim-fugitive'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'altercation/vim-colors-solarized'
+Plug 'kien/ctrlp.vim'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" " Git plugin not hosted on GitHub
+" Plugin 'git://git.wincent.com/command-t.git'
+" " The sparkup vim script is in a subdirectory of this repo called vim.
+" " Pass the path to set the runtimepath properly.
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" " Install L9 and avoid a Naming conflict if you've already installed a
+" " different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+"
+" " All of your Plugins must be added before the following line
+call plug#end()            " required
+" filetype plugin indent on    " required
 " First, set no transparency:
 let g:solarized_termtrans = 0
 
@@ -84,11 +95,9 @@ endif
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
-  set background=dark
+  set background=light
   colorscheme solarized
 endif
-
-filetype on
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -140,3 +149,8 @@ vmap <Enter> <Plug>(EasyAlign)
 nmap <Leader>a <Plug>(EasyAlign)
 
 set diffopt=vertical
+
+
+let vim_markdown_preview_github=1
+let vim_markdown_preview_browser='Google Chrome'
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1

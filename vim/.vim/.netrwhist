@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/scourge/.i3'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/gavin/.nix-profile'
+let g:netrw_dirhist_2='/Users/gavin/.nix-profile/etc'
+let g:netrw_dirhist_3='/nix/store/p1srllvm80vbamg0ca4kzidn4i15v6bx-user-environment/etc/profile.d'
+let g:netrw_dirhist_4='/Users/gavin/.nix-profile/etc/profile.d'
+let g:netrw_dirhist_5='/Users/gavin/dotfiles/ssh/.ssh'
